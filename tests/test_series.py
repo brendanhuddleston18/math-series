@@ -42,6 +42,11 @@ def test_sum_series_two():
   expected_lucas = 7
   assert actual == expected_fibo or expected_lucas
 
+def test_sum_series_three():
+  actual = sum_series(2, 7, 3)
+  expected = 10
+  assert actual == expected
+
 ###########################
   
 def test_fibonacciIteration_one():

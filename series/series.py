@@ -17,10 +17,12 @@ def lucas(n):
 
 
 def sum_series(n, first_num=0, second_num=1):
-  if first_num == 0:
-    return fibonacci(n)
-  elif first_num == 2:
-    return lucas(n)
+  if n == 0:
+    return first_num
+  elif n == 1:
+    return second_num
+
+  return sum_series(n - 1 , first_num, second_num) + sum_series(n - 2, first_num, second_num)
 
 
 #######################################
